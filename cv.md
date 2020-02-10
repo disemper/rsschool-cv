@@ -5,7 +5,8 @@
   * tel.: _8(908)-151-41-14_
   
 ###About me
-
+I like programming and I want to develop my skills in this sphere.
+I want to continue learning and realize my potential.
 
 ###Skills
 I use next technologies: 
@@ -19,7 +20,7 @@ I use next technologies:
 
 ###Code Examples
 An example code from my jQuery plugin for quick work with forms?  
-you can see the full plugin code [here](https://gitlab.com/disemper)
+_You can see the full plugin code [here](https://gitlab.com/disemper)_
 ```javascript
 function validation(form) {
   let errors = false;
