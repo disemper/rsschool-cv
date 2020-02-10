@@ -23,32 +23,14 @@ I use next technologies:
 An example code from my jQuery plugin for quick work with forms?  
 _You can see the full plugin code [here](https://gitlab.com/disemper)_
 ```javascript
-function validation(form) {
-  let errors = false;
-  const values = {};
-
-  form.find('input:not([type="hidden"], [type="checkbox"], [type="radio"]), textarea').each(function () {
-    const field = $(this);
-    const value = field.val();
-    const fieldName = field.attr('name');
-    values[fieldName] = value;
-
-    if (isRequired(field) && isEmpty(field)) {
-      setErrorField(field);
-      errors = true;
-      return;
-    }
     if (!isEmpty(field) && isMin(field)) {
       const reg = /\{\w+\}/;
       newMessageMin = messageMin.replace(reg, field.attr('minlength'));
-
       setErrorField(field, newMessageMin);
-
       errors = true;
       return;
     }
     if (validators) {
-
       if (validators[fieldName]) {
         for (const method in validators[fieldName]) {
           const func = validators[fieldName][method];
@@ -60,27 +42,12 @@ function validation(form) {
         }
       }
     }
-
-  });
-
-  const validateResult = validate(values);
-
-  if (validateResult) {
-    for (fieldName in validateResult) {
-      const field = form.find('[name="'+ fieldName +'"]');
-      setErrorField(field, validateResult[fieldName]);
-    }
-    errors = true;
-  };
-
-  return !errors;
-}
 ```
 
 ### A few projects (Frontend)
-* https://www.mk.metalexpert.pro/
-* http://arkoiltech.nl/en
-* http://aplana.ru/
+* [https://www.mk.metalexpert.pro/](https://www.mk.metalexpert.pro/)
+* [http://arkoiltech.nl/en](http://arkoiltech.nl/en)
+* [http://aplana.ru/](http://aplana.ru/)
 
 ### English
 Pre-Intermediate
