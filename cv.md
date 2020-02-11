@@ -6,10 +6,10 @@
   * tel.: _8(908)-151-41-14_
   
 ### About me
-I like programming and I want to develop my skills in this sphere.
+I like programming and I want to develop my skills in this sphere. My goal is to become a senior Frontend Developer  and  to take part in team development. My strengths are responsibility, attentiveness to details, teamwork.
 I want to continue learning and realize my potential.
 
-### Skills
+## Skills
 I use next technologies: 
 * HTML;
 * CSS / SCSS;
@@ -20,8 +20,8 @@ I use next technologies:
 * GIT, Atlassian Jira.
 
 ### Code Examples
-An example code from my jQuery plugin for quick work with forms?  
-_You can see the full plugin code [here](https://gitlab.com/disemper)_
+An example code from my jQuery plugin for quick work with forms?
+_You can see the full plugin code [here](https://github.com/disemper/quick-form/blob/develop/src/js/jquery.quick-form.js)_
 ```javascript
     if (!isEmpty(field) && isMin(field)) {
       const reg = /\{\w+\}/;
@@ -50,4 +50,4 @@ _You can see the full plugin code [here](https://gitlab.com/disemper)_
 * [http://aplana.ru/](http://aplana.ru/)
 
 ### English
-Pre-Intermediate
+Pre-Intermediate (A2)
