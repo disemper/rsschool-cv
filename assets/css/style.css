@@ -18,7 +18,7 @@ h4 {
 p {
   margin-top: 20px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   color: #2c2c2c;
 }
 
@@ -88,6 +88,10 @@ section:hover .section-title {
   text-shadow: 0 0 2px rgba(128, 214, 255, 0.6);
 }
 
+section:hover::before {
+  border-bottom-color: rgba(128, 214, 255, 0.8);
+}
+
 section::before {
   position: absolute;
   top: 80px;
@@ -99,6 +103,8 @@ section::before {
   height: 0;
 
   border-bottom: 1px solid #e7e8e4;
+
+  transition: .25s;
 }
 
 .section-title {
@@ -109,7 +115,8 @@ section::before {
   justify-content: center;
   width: 100px;
   height: 100px;
-  margin: 0 auto 5px;
+  margin-left: 10%;
+  margin-bottom: 5px;
   padding: 15px 8px;
 
   font-size: 14px;
@@ -123,6 +130,16 @@ section::before {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.12), -4px -4px 5px rgba(255, 255, 255, 0.95);
 
   transition: color .25s;
+}
+
+.section-inline {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.section-inline .section-title{
+  margin-left: 22%;
 }
 
 .about {
@@ -229,6 +246,16 @@ pre {
 
   section {
     padding: 20px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .section-inline {
+    grid-template: auto / 1fr;
+  }
+
+  .section-inline .section-title {
+    margin-left: 10%;
   }
 }
 
