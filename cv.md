@@ -19,8 +19,8 @@ I use next technologies:
 * Figma, Zeplin, Adobe XD;
 * GIT, Atlassian Jira.
 
-### Code Examples
-An example code from my jQuery plugin for quick work with forms?
+### Code Example
+An example code from my jQuery plugin for quick work with forms.
 _You can see the full plugin code [here](https://github.com/disemper/quick-form/blob/develop/src/js/jquery.quick-form.js)_
 ```javascript
     if (!isEmpty(field) && isMin(field)) {

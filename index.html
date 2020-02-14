@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Dmitry Shemyakin | CV</title>
+</head>
+<body>
+
+
+<div class="container">
+  <main>
+
+    <section class="about">
+      <div class="about__photo-wrapper">
+        <img class="about__photo" src="assets/img/photo.jpg" alt="Dmitry Shemyakin" width="230" height="215">
+      </div>
+      <div class="about__info">
+        <h1 class="about__main-title">Dmitry Shemyakin</h1>
+        <span class="about__position">Front-end developer</span>
+        <p class="about__text">I like programming and I want to develop my skills in this sphere.
+           My goal is to become a senior Frontend Developer and to take part in team development.</p>
+        <p>My strengths are responsibility, attentiveness to details, teamwork.
+           I want to continue learning and realize my potential.</p>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="section-title">Contacts</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <span class="contacts__item-title">City: </span> Nizhniy Novgorod
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__item-title">E-mail: </span>
+          <a href="mailto:disemper@gmail.com">disemper@gmail.com</a>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__item-title">Tel.: </span>
+          <a href="tel:+79081514114">8(908)151-41-14</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2 class="section-title">Skills</h2>
+      <p>I use next technologies: </p>
+      <ul class="skills__list">
+        <li>
+          <span class="skills__item">HTML</span>
+        </li>
+        <li>
+          <span class="skills__item">CSS</span>  <span class="skills__item">SCSS</span>
+        </li>
+        <li><span class="skills__item">Gulp</span></li>
+        <li><span class="skills__item">JS</span> <span class="skills__item">jQuery</span></li>
+        <li><span class="skills__item">Bootstrap</span></li>
+        <li><span class="skills__item">Figma</span>
+          <span class="skills__item">Zeplin</span> <span class="skills__item">Adobe XD</span></li>
+        <li><span class="skills__item">GIT</span> <span class="skills__item">Atlassian Jira</span></li>
+      </ul>
+    </section>
+
+    <section class="code">
+      <h2 class="section-title">Code Example</h2>
+      <p>An example code from my jQuery plugin for quick work with forms</p>
+      <p>You can see the full plugin code
+        <a href="https://github.com/disemper/quick-form/blob/develop/src/js/jquery.quick-form.js" target="_blank">here</a>
+      </p>
+      <pre>
+        <code>
+if (!isEmpty(field) && isMin(field)) {
+  const reg = /\{\w+\}/;
+  newMessageMin = messageMin.replace(reg, field.attr('minlength'));
+  setErrorField(field, newMessageMin);
+  errors = true;
+  return;
+}
+if (validators) {
+  if (validators[fieldName]) {
+    for (const method in validators[fieldName]) {
+      const func = validators[fieldName][method];
+      if (func(value)) {
+        setErrorField(field, func(value));
+        errors = true;
+        return;
+      }
+    }
+  }
+}       </code>
+      </pre>
+    </section>
+
+    <section class="experience">
+      <h2 class="section-title">Experience</h2>
+      <p>A few projects (Frontend)</p>
+      <ul class="projects__list">
+        <li class="projects__item"><a href="https://www.mk.metalexpert.pro/" target="_blank">mk.metalexpert.pro</a></li>
+        <li class="projects__item"><a href="http://arkoiltech.nl/en" target="_blank">arkoiltech.nl</a></li>
+        <li class="projects__item"><a href="http://aplana.ru/" target="_blank">aplana.ru</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="rsschool">RSSchool 2020q1</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
